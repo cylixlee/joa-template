@@ -64,23 +64,23 @@
 
 \def\maketitletwo{%
 \begin{strip}
+\vspace{-2.5\baselineskip}%
 \begin{flushleft}
 {\fontsize{18pt}{18pt}\selectfont \bfseries\JoAtitletext\par}
-\vspace{1\baselineskip}
+\vspace{1.2\baselineskip}
 {\fontsize{12pt}{12pt}\selectfont\JoAauthortext\par}
-\vspace{0.2\baselineskip}
+\vspace{0.5\baselineskip}
 {\fontsize{12pt}{12pt}\selectfont\JoAaffiliationtext\par}
-\vspace{0.2\baselineskip}
 \end{flushleft}
-\vspace{0.6\baselineskip}
+\vspace{0.8\baselineskip}
 \noindent
-\includegraphics[width=\textwidth]{mider.png}
-\vspace{0.6\baselineskip}
+\includegraphics[width=\textwidth]{mider.png}%
+\par\vspace{1.5\baselineskip}%
 {\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract\par}
 \vspace{0.5\baselineskip}
 {\fontsize{12pt}{12pt}\selectfont\parindent=2em\JoAabstracttext\par}
 \vspace{1\baselineskip}
-{\fontsize{12pt}{12pt}\selectfont \bfseries Keywords: \JoAkeywordtext\par}
+{\fontsize{12pt}{12pt}\selectfont \bfseries Keywords: \normalfont \JoAkeywordtext\par}
 \vspace{1\baselineskip}
 \noindent
 \includegraphics[width=\textwidth]{footer.png}
