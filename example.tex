@@ -1,0 +1,70 @@
+\documentclass{JoA}
+
+\JoAtitle{Your Shit Title Here}
+\JoAauthor{First Author$^{1,*}$, Second Author$^{2}$}
+\JoAaffiliation{$^{1}$Department/Institution, University, City 100000, China\\
+$^{2}$Department/Institution, University, City 100000, China}
+\JoAkeyword{Keyword 1; Keyword 2; Keyword 3; Keyword 4}
+\JoAabstract{Abstract content here. Describe the background, methods, results, and conclusions of your research.}
+
+\begin{document}
+
+\maketitletwo
+
+\begin{multicols}{2}
+
+	\section{Introduction}
+
+	Introduction content here. Explain the research background, problems to be solved, and the significance of this work.
+
+	\section{Theoretical Model}
+
+	\subsection{Example Model}
+	We describe the system using the time-independent Schr\"odinger equation:
+	\begin{equation}
+		-\frac{\hbar^2}{2m} \frac{\partial^2 \psi}{\partial x^2} + V(x)\psi = E \psi
+	\end{equation}
+
+	Here, $T$ is the kinetic energy operator, and $V(x)$ is the potential energy.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.2\textwidth]{joker.png}
+		\caption{Joker.}
+		\label{fig:joker}
+	\end{figure}
+
+	\begin{table}[H]
+		\centering
+		\caption{shit}
+		\label{tab:shit}
+		\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+			\toprule
+			\textbf{shit} & \textbf{shit} \\
+			\midrule
+			shit          & shit          \\
+			shit          & shit          \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+
+	\section{Experimental Results}
+
+	Experimental results content here.
+
+	\section{Conclusion}
+
+	Conclusion content here. Summarize your main findings and contributions.
+
+	\begin{thebibliography}{99}
+
+		\bibitem{example_ref1}
+		Author, A., \& Author, B. (Year).
+		\textit{Book title}.
+		Publisher.
+
+	\end{thebibliography}
+
+\end{multicols}
+
+\end{document}

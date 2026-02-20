@@ -1,0 +1,113 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{JoA}[2026/02/20 JoA - Journal of Automatics LaTeX Template]
+
+\LoadClass{article}
+
+\RequirePackage{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+\RequirePackage{booktabs}
+\RequirePackage{caption}
+\RequirePackage{tabularx}
+\RequirePackage{xcolor}
+\RequirePackage{titlesec}
+\RequirePackage{setspace}
+\RequirePackage{indentfirst}
+\RequirePackage{multicol}
+\RequirePackage{fancyhdr}
+\RequirePackage{newtxtext}
+\RequirePackage{newtxmath}
+
+\geometry{
+  left=2.54cm,
+  right=2.54cm,
+  top=3.8cm,
+  bottom=2.54cm,
+  headheight=2.5cm,
+  headsep=0.6cm
+}
+
+\definecolor{JoARed}{HTML}{C71D31}
+
+\titleformat{\section}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesection.}{0.5em}{}%
+\titleformat{\subsection}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubsection}{0.5em}{}%
+
+\AtBeginDocument{%
+  \pagestyle{fancy}%
+  \fancyhf{}%
+  \fancyhead[C]{\includegraphics[width=\textwidth]{\JoAheaderimage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[C]{\thepage}%
+}
+
+\gdef\JoAheaderimage{header.png}
+\newcommand{\headerimage}[1]{\gdef\JoAheaderimage{#1}}
+
+\gdef\JoAtitletext{}
+\gdef\JoAauthortext{}
+\gdef\JoAaffiliationtext{}
+\gdef\JoAkeywordtext{}
+\gdef\JoAabstracttext{}
+
+\newcommand{\JoAtitle}[1]{\gdef\JoAtitletext{#1}}
+\newcommand{\JoAauthor}[1]{\gdef\JoAauthortext{#1}}
+\newcommand{\JoAaffiliation}[1]{\gdef\JoAaffiliationtext{#1}}
+\newcommand{\JoAkeyword}[1]{\gdef\JoAkeywordtext{#1}}
+\newcommand{\JoAabstract}[1]{\gdef\JoAabstracttext{#1}}
+
+\makeatletter
+\def\normalsize{\fontsize{10.5pt}{12.6pt}\selectfont}
+\makeatother
+\singlespacing
+\setlength{\parskip}{0pt}
+
+\def\maketitletwo{%
+\begin{flushleft}
+\interlinepenalty=10000
+{\fontsize{18pt}{18pt}\selectfont \bfseries\JoAtitletext\par}
+
+\vspace{1\baselineskip}
+
+{\fontsize{12pt}{12pt}\selectfont\JoAauthortext\par}
+
+\vspace{0.2\baselineskip}
+
+{\fontsize{12pt}{12pt}\selectfont\JoAaffiliationtext\par}
+
+\vspace{0.2\baselineskip}
+\end{flushleft}
+
+\vspace{0.6\baselineskip}
+\noindent
+\includegraphics[width=\textwidth]{mider.png}
+\vspace{0.6\baselineskip}
+
+\begingroup
+\noindent{\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract}
+\vspace{0.5\baselineskip}
+\endgroup
+
+\begingroup
+\fontsize{12pt}{12pt}\selectfont
+\parindent=2em
+\vspace{0.5\baselineskip}
+
+\JoAabstracttext
+
+\vspace{1\baselineskip}
+\endgroup
+
+\begingroup
+\noindent{\fontsize{12pt}{12pt}\selectfont \bfseries Keywords:}
+{\fontsize{12pt}{12pt}\selectfont\JoAkeywordtext}
+\vspace{1\baselineskip}
+\endgroup
+
+\vspace{0.6\baselineskip}
+\noindent
+\includegraphics[width=\textwidth]{footer.png}
+\vspace{0.6\baselineskip}
+}
+
+\endinput
