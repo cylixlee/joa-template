@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{JoA}[2026/02/20 JoA - Journal of Automatics LaTeX Template]
+\ProvidesClass{JoA}[2026/02/20 JoA - Joker of Academics LaTeX Template]
 
 \LoadClass[twocolumn]{article}
 
