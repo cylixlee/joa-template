@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{JoA}[2026/02/20 JoA - Journal of Automatics LaTeX Template]
 
-\LoadClass{article}
+\LoadClass[twocolumn]{article}
 
 \RequirePackage{geometry}
 \RequirePackage{amsmath}
@@ -14,7 +14,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{setspace}
 \RequirePackage{indentfirst}
-\RequirePackage{multicol}
+\RequirePackage{cuted}
 \RequirePackage{fancyhdr}
 \RequirePackage{newtxtext}
 \RequirePackage{newtxmath}
@@ -24,7 +24,7 @@
   right=2.54cm,
   top=3.8cm,
   bottom=2.54cm,
-  headheight=2.5cm,
+  headheight=72pt,
   headsep=0.6cm
 }
 
@@ -63,51 +63,29 @@
 \setlength{\parskip}{0pt}
 
 \def\maketitletwo{%
+\begin{strip}
 \begin{flushleft}
-\interlinepenalty=10000
 {\fontsize{18pt}{18pt}\selectfont \bfseries\JoAtitletext\par}
-
 \vspace{1\baselineskip}
-
 {\fontsize{12pt}{12pt}\selectfont\JoAauthortext\par}
-
 \vspace{0.2\baselineskip}
-
 {\fontsize{12pt}{12pt}\selectfont\JoAaffiliationtext\par}
-
 \vspace{0.2\baselineskip}
 \end{flushleft}
-
 \vspace{0.6\baselineskip}
 \noindent
 \includegraphics[width=\textwidth]{mider.png}
 \vspace{0.6\baselineskip}
-
-\begingroup
-\noindent{\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract}
+{\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract\par}
 \vspace{0.5\baselineskip}
-\endgroup
-
-\begingroup
-\fontsize{12pt}{12pt}\selectfont
-\parindent=2em
-\vspace{0.5\baselineskip}
-
-\JoAabstracttext
-
+{\fontsize{12pt}{12pt}\selectfont\parindent=2em\JoAabstracttext\par}
 \vspace{1\baselineskip}
-\endgroup
-
-\begingroup
-\noindent{\fontsize{12pt}{12pt}\selectfont \bfseries Keywords:}
-{\fontsize{12pt}{12pt}\selectfont\JoAkeywordtext}
+{\fontsize{12pt}{12pt}\selectfont \bfseries Keywords: \JoAkeywordtext\par}
 \vspace{1\baselineskip}
-\endgroup
-
-\vspace{0.6\baselineskip}
 \noindent
 \includegraphics[width=\textwidth]{footer.png}
 \vspace{0.6\baselineskip}
+\end{strip}%
 }
 
 \endinput
