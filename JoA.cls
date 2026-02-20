@@ -42,7 +42,8 @@
 }
 
 \gdef\JoAheaderimage{header.png}
-\newcommand{\headerimage}[1]{\gdef\JoAheaderimage{#1}}
+\gdef\JoAfooterimage{footer.png}
+\newcommand{\miderimage}[1]{\gdef\JoAmiderimage{#1}}
 
 \gdef\JoAtitletext{}
 \gdef\JoAauthortext{}
@@ -74,7 +75,7 @@
 \end{flushleft}
 \vspace{0.8\baselineskip}
 \noindent
-\includegraphics[width=\textwidth]{mider.png}%
+\includegraphics[width=\textwidth]{\JoAmiderimage}%
 \par\vspace{1.5\baselineskip}%
 {\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract\par}
 \vspace{0.5\baselineskip}
@@ -83,7 +84,7 @@
 {\fontsize{12pt}{12pt}\selectfont \bfseries Keywords: \normalfont \JoAkeywordtext\par}
 \vspace{1\baselineskip}
 \noindent
-\includegraphics[width=\textwidth]{footer.png}
+\includegraphics[width=\textwidth]{\JoAfooterimage}
 \vspace{0.6\baselineskip}
 \end{strip}%
 }
