@@ -2,7 +2,7 @@
 
 Joker of Academics (JoA) is a community-maintained platform for publishing "failed" research and "academic garbage". Unlike traditional journals, JoA accepts submissions that didn't work out—providing encouragement, ideas, and lessons learned from failures.
 
-> [!IMPORTANT] Chinese support
+> [!IMPORTANT]
 >
 > 
 > For Chinese papers, use document class [JoACN](./JoACN.cls) instead of [JoA](./JoA.cls). See [example.zh.tex](./example.zh.tex) for a complete Chinese example.
