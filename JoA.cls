@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{JoA}[2026/02/20 JoA - Joker of Academics LaTeX Template]
 
-\LoadClass[twocolumn]{article}
+\LoadClass[a4paper,twocolumn]{article}
 
 \RequirePackage{geometry}
 \RequirePackage{amsmath}
@@ -35,6 +35,10 @@
 \titleformat{\subsubsection}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubsubsection}{0.5em}{}%
 \titleformat{\paragraph}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\theparagraph}{0.5em}{}%
 \titleformat{\subparagraph}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubparagraph}{0.5em}{}%
+
+\titlespacing*{\section}{0pt}{0.9\baselineskip}{1.0ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.0ex plus .2ex minus .2ex}{1.0ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{1.0ex plus .2ex minus .2ex}{1.0ex plus .2ex}
 
 \AtBeginDocument{%
   \pagestyle{fancy}%
