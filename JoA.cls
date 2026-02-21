@@ -3,6 +3,7 @@
 
 \LoadClass[a4paper,twocolumn]{article}
 
+\RequirePackage{ctex}
 \RequirePackage{geometry}
 \RequirePackage{amsmath}
 \RequirePackage{graphicx}
