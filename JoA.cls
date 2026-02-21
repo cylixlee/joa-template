@@ -32,6 +32,9 @@
 
 \titleformat{\section}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesection.}{0.5em}{}%
 \titleformat{\subsection}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubsection}{0.5em}{}%
+\titleformat{\subsubsection}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubsubsection}{0.5em}{}%
+\titleformat{\paragraph}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\theparagraph}{0.5em}{}%
+\titleformat{\subparagraph}{\color{JoARed}\bfseries\fontsize{12pt}{12pt}\selectfont}{\thesubparagraph}{0.5em}{}%
 
 \AtBeginDocument{%
   \pagestyle{fancy}%
