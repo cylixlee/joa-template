@@ -10,7 +10,8 @@ Joker of Academics (JoA) is a community-maintained platform for publishing "fail
 | `header.png` | Header image for the paper |
 | `footer.png` | Footer image for the paper |
 | `mider.png` | Banner image containing DOI (to be replaced by editor upon publication) |
-| `example.tex` | Example paper demonstrating template usage |
+| `example.tex` | Example paper (English) demonstrating template usage |
+| `example.zh.tex` | Example paper (Chinese) demonstrating template usage |
 | `joker.png` | Sample image used in the example paper |
 
 ## Usage
@@ -43,17 +44,9 @@ $^{2}$Department, University, City, Country}
 \end{document}
 ```
 
-## Commands Reference
+## Chinese Support
 
-| Command | Description |
-|---------|-------------|
-| `\JoAtitle{...}` | Set the paper title |
-| `\JoAauthor{...}` | Set authors with affiliations |
-| `\JoAaffiliation{...}` | Set author affiliations |
-| `\JoAkeyword{...}` | Set keywords (semicolon separated) |
-| `\JoAabstract{...}` | Set the abstract content |
-| `\miderimage{...}` | Set the DOI banner image |
-| `\maketitletwo` | Generate the title page with header, footer, and metadata |
+The template includes `ctex` package, so you can write papers in Chinese directly. See `example.zh.tex` for a Chinese example.
 
 ## Compiling
 
