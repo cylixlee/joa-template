@@ -48,9 +48,8 @@
   \fancyfoot[C]{\thepage}%
 }
 
-\gdef\JoAheaderimage{header.png}
-\gdef\JoAfooterimage{footer.png}
-\newcommand{\miderimage}[1]{\gdef\JoAmiderimage{#1}}
+\gdef\JoAheaderimage{.template/header.png}
+\gdef\JoAfooterimage{.template/footer.png}
 
 \gdef\JoAtitletext{}
 \gdef\JoAauthortext{}
@@ -82,7 +81,7 @@
 \end{flushleft}
 \vspace{0.8\baselineskip}
 \noindent
-\includegraphics[width=\textwidth]{\JoAmiderimage}%
+\includegraphics[width=\textwidth]{.template/banner.png}%
 \par\vspace{1.5\baselineskip}%
 {\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract\par}
 \vspace{0.5\baselineskip}

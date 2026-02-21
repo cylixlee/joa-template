@@ -11,44 +11,40 @@ Joker of Academics (JoA) is a community-maintained platform for publishing "fail
 
 ## Files
 
-| File                               | Description                                                             |
-| ---------------------------------- | ----------------------------------------------------------------------- |
-| [JoA.cls](./JoA.cls)               | LaTeX class file for English papers                                     |
-| [JoACN.cls](./JoACN.cls)           | LaTeX class file for Chinese papers (includes ctex package)             |
-| [header.png](./header.png)         | Header image for the paper                                              |
-| [footer.png](./footer.png)         | Footer image for the paper                                              |
-| [mider.png](./mider.png)           | Banner image containing DOI (to be replaced by editor upon publication) |
-| [example.tex](./example.tex)       | Example paper (English) demonstrating template usage                    |
-| [example.zh.tex](./example.zh.tex) | Example paper (Chinese) demonstrating template usage                    |
-| [joker.png](./joker.png)           | Sample image used in the example paper                                  |
+This repository contains four types of files: *template resources*, *paper resources*, *template classes*, and *example papers*.
 
-## Usage
-
-1. **Copy the template files** ([JoA.cls](./JoA.cls), [header.png](./header.png), [footer.png](./footer.png), [mider.png](./mider.png)) to your project directory
-
-2. **Use the template** in your LaTeX document:
-```latex
-\documentclass{JoA}
+```
+.
+├── .template/        # Template resources
+│   ├── header.png
+│   ├── footer.png
+│   └── banner.png
+├── images/           # Paper resources
+│   └── joker.png
+├── JoA.cls           # Template class for English papers
+├── JoACN.cls         # Template class for Chinese papers
+├── example.tex       # Example English paper
+└── example.zh.tex    # Example Chinese paper
 ```
 
-3. **Set document metadata** (before `\begin{document}`):
-```latex
-\JoAtitle{Your Paper Title}
-\miderimage{mider.png}
-\JoAauthor{First Author$^{1,*}$, Second Author$^{2}$}
-\JoAaffiliation{$^{1}$Department, University, City, Country\\
-$^{2}$Department, University, City, Country}
-\JoAkeyword{Keyword 1; Keyword 2; Keyword 3; Keyword 4}
-\JoAabstract{Your abstract content here.}
-```
+**Template resources** are the image files required by the template. They are used for the page header, page footer, and the title page banner. These files are embedded in the cls files, so users do not need to manage them separately.
 
-4. **Generate the title page**:
-```latex
-\begin{document}
-\maketitletwo
+**Paper resources** are resources required by your paper, such as figures. For demonstration purposes, this folder currently contains one sample image. Since this image belongs to the paper rather than the template, it is placed in the paper resources folder rather than the template resources folder. Users should put their own figures in this folder.
 
-\section{Introduction}
-...
-\end{document}
-```
+**Template classes** are the LaTeX class files that define the document format. The English version is for papers in English and does not include the ctex package, making it compatible with pdflatex. The Chinese version includes the ctex package for Chinese papers and requires XeLaTeX or LuaLaTeX compiler.
+
+**Example papers** demonstrate how to use the templates in English and Chinese respectively.
+
+## Commands
+
+The template defines several custom commands for setting document metadata. The following table describes their purposes.
+
+| Command                | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| `\JoAtitle{...}`       | Set the paper title                                       |
+| `\JoAauthor{...}`      | Set authors with affiliations                             |
+| `\JoAaffiliation{...}` | Set author affiliations                                   |
+| `\JoAkeyword{...}`     | Set keywords (semicolon separated)                        |
+| `\JoAabstract{...}`    | Set the abstract content                                  |
+| `\maketitletwo`        | Generate the title page with header, footer, and metadata |
 
