@@ -27,13 +27,13 @@ This repository contains four types of files: *template resources*, *paper resou
 └── example.zh.tex    # Example Chinese paper
 ```
 
-**Template resources** are the image files required by the template. They are used for the page header, page footer, and the title page banner. These files are embedded in the cls files, so users do not need to manage them separately.
+- **Template resources** are the image files required by the template. They are used for the page header, page footer, and the title page banner. These files are embedded in template classes, so users shall not touch them.
 
-**Paper resources** are resources required by your paper, such as figures. For demonstration purposes, this folder currently contains one sample image. Since this image belongs to the paper rather than the template, it is placed in the paper resources folder rather than the template resources folder. Users should put their own figures in this folder.
+- **Paper resources** are resources required by your paper, such as figures. For demonstration purposes, this folder currently contains one sample image. Since this image belongs to the paper rather than the template, it is placed in the paper resources folder rather than the template resources folder. Users should put their own figures in this folder.
 
-**Template classes** are the LaTeX class files that define the document format. The English version is for papers in English and does not include the ctex package, making it compatible with pdflatex. The Chinese version includes the ctex package for Chinese papers and requires XeLaTeX or LuaLaTeX compiler.
+- **Template classes** are the LaTeX class files that define the document format. The English version is for papers in English and does not include the `ctex` package, making it compatible with *pdfLaTeX*. The Chinese version includes the `ctex` package for Chinese papers and requires *XeLaTeX* or *LuaLaTeX* compiler.
 
-**Example papers** demonstrate how to use the templates in English and Chinese respectively.
+- **Example papers** demonstrate how to use the templates in English and Chinese respectively.
 
 ## Commands
 
