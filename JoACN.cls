@@ -1,8 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{JoA}[2026/02/20 JoA - Joker of Academics LaTeX Template]
+\ProvidesClass{JoACN}[2026/02/20 JoACN - Joker of Academics LaTeX Template (Chinese)]
 
 \LoadClass[a4paper,twocolumn]{article}
 
+\RequirePackage{ctex}
 \RequirePackage{geometry}
 \RequirePackage{amsmath}
 \RequirePackage{graphicx}
