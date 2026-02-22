@@ -82,7 +82,7 @@
 \end{flushleft}
 \vspace{0.8\baselineskip}
 \noindent
-\includegraphics[width=\textwidth]{.template/banner.png}%
+\includegraphics[width=\textwidth]{.template/banner.zh.png}%
 \par\vspace{1.5\baselineskip}%
 {\color{JoARed}\fontsize{15pt}{15pt}\selectfont \bfseries Abstract\par}
 \vspace{0.5\baselineskip}

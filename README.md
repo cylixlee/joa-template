@@ -18,7 +18,8 @@ This repository contains four types of files: *template resources*, *paper resou
 ├── .template/        # Template resources
 │   ├── header.png
 │   ├── footer.png
-│   └── banner.png
+│   ├── banner.png    #   for English papers
+│   └── banner.zh.png #   for Chinese papers
 ├── images/           # Paper resources
 │   └── joker.png
 ├── JoA.cls           # Template class for English papers
@@ -27,7 +28,7 @@ This repository contains four types of files: *template resources*, *paper resou
 └── example.zh.tex    # Example Chinese paper
 ```
 
-- **Template resources** are the image files required by the template. They are used for the page header, page footer, and the title page banner. These files are embedded in template classes, so users shall not touch them.
+- **Template resources** are the image files required by the template. They include header, footer, and banner images, with separate versions for English and Chinese papers. These files are embedded in template classes, so users shall not touch them.
 
 - **Paper resources** are resources required by your paper, such as figures. For demonstration purposes, this folder currently contains one sample image. Since this image belongs to the paper rather than the template, it is placed in the paper resources folder rather than the template resources folder. Users should put their own figures in this folder.
 
